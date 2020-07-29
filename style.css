@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    background-color: white;
+    color: #1b1d1f!important;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar .nav-item .nav-link {
+    font-weight: bolder;
+}
+
+.ln-img{
+    border-right: 1px solid #adaeae;
+}
+
+a{
+    color: #1b1d1f;
+}
+
+.discover-menu{
+    background-color: white;
+    width: 100vw;
+    display: none;
+    position: fixed;
+    box-shadow: 0px 60px 50px 1px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    z-index: 2;
+}
+
+.discover-menu .row h5 a {
+    font-weight: bolder;
+    color: black;
+}
+
+.discover-menu .row a {
+    color: #a9a8a8;
+}
+
+.second-nav{
+    box-sizing: border-box!important;
+    border: 1px solid #F2F3F4;
+    height: 100%;
+}
+
+.second-nav:hover, .active {
+    border-bottom: 1px solid #0058a2;
+    box-sizing: border-box!important;
+    cursor: pointer;
+}
+
+.main-container{
+    background-color: #F2F3F4;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+
+.profile-box{
+    width: 80%;
+    height: 48vh;
+    background-color: white;
+}
+
+.profile-icon{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.post-container{
+    position: relative;
+    background-color: white;
+    height: 20vh;
+    width: 100%;
+}
+
+.connect-sidebar{
+    position: fixed;
+    top: 25vh;
+    left: 70vw;
+}
+
+@media only screen and (max-width: 991px) {
+    .profile-container, .connect-sidebar {
+      display: none!important;
+    }
+}
