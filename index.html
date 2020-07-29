@@ -30,7 +30,7 @@
         </div>
 
         <div class="mx-auto col-md-6 order-0">
-                <input class="form-control mr-sm-2 text-muted" type="search" placeholder="Search Linkedln" aria-label="Search">
+                <input class="form-control mr-sm-2 text-muted" type="search" placeholder="Search Linkedln" aria-label="Search" onclick="search(1)">
         </div>
 
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
@@ -104,7 +104,7 @@
 
         <div class="container-fluid text-center border-bottom" id="2ndMenu" style="background-color: #F2F3F4;
                                                                                     position: sticky;
-                                                                                    z-index: 2;
+                                                                                    z-index: 1;
                                                                                     top: 8.8vh;">
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-1 second-nav p-4 active text-muted" >
@@ -138,7 +138,7 @@
                 <div class="col-lg-3 profile-container" style="position:fixed; top:25vh;">
                     <div class="profile-box mx-auto border">
                         <div class="profile-icon border-bottom">
-                            <img src="images/user.png" width="75" height="75" alt="">
+                            <img src="images/user.png" width="75" height="75" alt=""> 
                             <h6 class="mt-3">Caroline Belfort</h6>
                             <h6 class="text-muted">Oakmunt</h6>
                         </div>
@@ -164,25 +164,231 @@
 
                 <!-- Posts Container -->
                 
-                <div class="col-lg-6 mt-3 mx-auto ">
-                    <div class="post-container">
-                        <div class="row m-0 p-3 text-center border-bottom">
-                            <div class="col-md-4"><img class="ml-2" src="images/pencil.png" width="20" height="20" alt=""> Share Update</div>
-                            <div class="col-md-4"><img class="ml-2" src="images/gallery.png" width="20" height="20" alt=""> Upload Photo</div>
-                            <div class="col-md-4"><img class="ml-2" src="images/book.png" width="20" height="20" alt=""> Write Article</div>
-                        </div>
-                    </div>
-                </div>   
+                <div class="col-lg-6 mt-3 mx-auto d-flex flex-column">
 
+                    <!--Post Something Container  -->
+    
+                    <div class="col-lg mx-auto ">
+                        <div class="post-container border">
+                            <div class="row m-0 p-3 text-center border-bottom">
+                                <div class="col-md-4"><img class="ml-2" src="images/pencil.png" width="20" height="20" alt=""> Share an Update</div>
+                                <div class="col-md-4"><img class="ml-2" src="images/gallery.png" width="20" height="20" alt=""> Upload Photo</div>
+                                <div class="col-md-4"><img class="ml-2" src="images/book.png" width="20" height="20" alt=""> Write Article</div>
+                            </div>
+
+                            <div class="row p-5">
+                                <input type="text" class="border-0" style="outline:none;" placeholder="Write Something...">
+                            </div>
+                        </div>
+                    </div>  
+
+                    <!-- Post From People -->
+
+                    <div class="col-lg mt-3 mx-auto">
+                        <div class="border post-container p-3 mb-3">
+                    
+                                    <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                        <img src="images/user.png" width="40" height="40" alt="">
+                                        <h6 class="ml-3" style="font-weight: bolder;">Julia <br> <span class="h6 text-muted">Web Developer</span></h6>
+                                    </div>
+
+                                    <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                        <h6 class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Cupiditate vitae totam tempore iusto iure temporibus ad alias accusamus ipsa, ab in corporis, aliquam,
+                                             laborum necessitatibus numquam doloremque illo neque dignissimos!</h6>
+                                    </div>
+
+                                    <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                        <img src="images/like.png" height="25" width="25" alt=""> 10
+                                        <img class="ml-2" src="images/message.png" height="25" width="25" alt="">3
+                                    </div>
+
+                                    <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                        <img src="images/user.png" width="40" height="40" alt="">
+                                        <h6 class="ml-3" style="font-weight: bolder;">Jul <br> <span class="h6 text-muted">This is Awesome</span></h6>
+                                    </div>
+
+                                    <div class="row pl-4 pr-2">
+                                        <input type="text" class="border-0" style="outline:none;" placeholder="Add Comment">
+                                    </div>
+
+                        </div> 
+
+                        <div class="border post-container p-3 mb-3">
+                    
+                            <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                <img src="images/user.png" width="40" height="40" alt="">
+                                <h6 class="ml-3" style="font-weight: bolder;">Julia <br> <span class="h6 text-muted">Web Developer</span></h6>
+                            </div>
+
+                            <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                <h6 class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Cupiditate vitae totam tempore iusto iure temporibus ad alias accusamus ipsa, ab in corporis, aliquam,
+                                    laborum necessitatibus numquam doloremque illo neque dignissimos!</h6>
+                            </div>
+
+                            <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                <img src="images/like.png" height="25" width="25" alt=""> 15
+                                <img class="ml-2" src="images/message.png" height="25" width="25" alt="">200
+                            </div>
+
+                            <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                <img src="images/user.png" width="40" height="40" alt="">
+                                <h6 class="ml-3" style="font-weight: bolder;">Julia <br> <span class="h6 text-muted">This is Awesome</span></h6>
+                            </div>
+
+                            <div class="row pl-4 pr-2">
+                                <input type="text" class="border-0" style="outline:none;" placeholder="Add Comment">
+                            </div>
+
+                        </div>
+
+                        <div class="border post-container p-3 mb-3">
+                    
+                            <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                <img src="images/user.png" width="40" height="40" alt="">
+                                <h6 class="ml-3" style="font-weight: bolder;">Julia <br> <span class="h6 text-muted">Web Developer</span></h6>
+                            </div>
+
+                            <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                <h6 class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Cupiditate vitae totam tempore iusto iure temporibus ad alias accusamus ipsa, ab in corporis, aliquam,
+                                    laborum necessitatibus numquam doloremque illo neque dignissimos!</h6>
+                            </div>
+
+                            <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                <img src="images/like.png" height="25" width="25" alt=""> 10
+                                <img class="ml-2" src="images/message.png" height="25" width="25" alt=""> 2 
+                            </div>
+
+                            <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                <img src="images/user.png" width="40" height="40" alt=""> 
+                                <h6 class="ml-3" style="font-weight: bolder;">Juliat <br> <span class="h6 text-muted">This is Awesome</span></h6>
+                            </div>
+
+                            <div class="row pl-4 pr-2">
+                                <input type="text" class="border-0" style="outline:none;" placeholder="Add Comment">
+                            </div>
+
+                        </div>
+
+                        <div class="border post-container p-3 mb-3">
+                        
+                            <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                <img src="images/user.png" width="40" height="40" alt="">
+                                <h6 class="ml-3" style="font-weight: bolder;">Julia <br> <span class="h6 text-muted">Web Developer</span></h6>
+                            </div>
+
+                            <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                <h6 class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Cupiditate vitae totam tempore iusto iure temporibus ad alias accusamus ipsa, ab in corporis, aliquam,
+                                    laborum necessitatibus numquam doloremque illo neque dignissimos!</h6>
+                            </div>
+
+                            <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                <img src="images/like.png" height="25" width="25" alt=""> 2
+                                <img class="ml-2" src="images/message.png" height="25" width="25" alt=""> 5
+                            </div>
+
+                            <div class="d-flex p-3 flex-row searchResult text-left mb-2 border-bottom">
+                                <img src="images/user.png" width="40" height="40" alt="">
+                                <h6 class="ml-3" style="font-weight: bolder;">Juli <br> <span class="h6 text-muted">This is Awesome</span></h6>
+                            </div>
+
+                            <div class="row pl-4 pr-2">
+                                <input type="text" class="border-0" style="outline:none;" placeholder="Add Comment">
+                            </div>
+
+                        </div>
+               
+                    </div>
+
+                </div>
                 <!-- Connect Sidebar -->
     
-                <div class="col-lg-3 connect-sidebar" >
-                    <div class="profile-box mx-auto">
+                <div class="col-lg-3 connect-sidebar " >
+                    <div class="profile-box mx-auto border">
     
                     </div>
                 </div> 
             </div>
         </div>
+    </div>
+
+    <!-- Search Container -->
+
+    <div class="search-container mx-auto" id="searchContainer" onmouseover="search(1)" onmouseout="search(0)" >
+       
+        <div class="d-flex row flex-row justify-content-center align-items-center mt-3" >
+                <div class="category col-md-2 text-center justify-content-center align-items-center ">
+                    <h6>People</h6>
+                </div>
+
+                <div class="searchBox border-left ml-5 col-md-6">
+    
+                    <div class="d-flex flex-row searchResult mb-2">
+                        <img src="images/user.png" width="40" height="40" alt="">
+                        <h6 class="ml-3" style="font-weight: bolder;">Julia <br> <span class="h6 text-muted">Web Developer</span></h6>
+                    </div>
+    
+                    <div class="d-flex flex-row searchResult mb-2">
+                        <img src="images/user.png" width="40" height="40" alt="">
+                        <h6 class="ml-3" style="font-weight: bolder;">Julia <br> <span class="h6 text-muted">Web Developer</span></h6>
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="d-flex row flex-row justify-content-center align-items-center mt-3" >
+            <div class="category col-md-2 text-center justify-content-center align-items-center ">
+                <h6>Company</h6>
+            </div>
+
+            <div class="searchBox border-left ml-5 col-md-6">
+
+                <div class="d-flex flex-row searchResult mb-2">
+                    <img src="images/user.png" width="40" height="40" alt="">
+                    <h6 class="ml-3" style="font-weight: bolder;">Google <br> <span class="h6 text-muted">  IT </span></h6>
+                </div>
+
+                <div class="d-flex flex-row searchResult mb-2">
+                    <img src="images/user.png" width="40" height="40" alt="">
+                    <h6 class="ml-3" style="font-weight: bolder;">Amazon <br> <span class="h6 text-muted">  Ecom </span></h6>
+                </div>
+
+                <div class="d-flex flex-row searchResult mb-2">
+                    <img src="images/user.png" width="40" height="40" alt="">
+                    <h6 class="ml-3" style="font-weight: bolder;">Google <br> <span class="h6 text-muted">  IT </span></h6>
+                </div>
+
+                <div class="d-flex flex-row searchResult mb-2">
+                    <img src="images/user.png" width="40" height="40" alt="">
+                    <h6 class="ml-3" style="font-weight: bolder;">Google <br> <span class="h6 text-muted">  IT </span></h6>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="d-flex row flex-row justify-content-center align-items-center mt-3" >
+            <div class="category col-md-2 text-center justify-content-center align-items-center ">
+                <h6>Groups</h6>
+            </div>
+
+            <div class="searchBox border-left ml-5 col-md-6">
+
+                <div class="d-flex flex-row searchResult mb-2">
+                    <img src="images/user.png" width="40" height="40" alt="">
+                    <h6 class="ml-3" style="font-weight: bolder;">LV Recruitment <br> <span class="h6 text-muted">Job Descp</span></h6>
+                </div>
+
+                <div class="d-flex flex-row searchResult mb-2">
+                    <img src="images/user.png" width="40" height="40" alt="">
+                    <h6 class="ml-3" style="font-weight: bolder;">XYZ comp <br> <span class="h6 text-muted">XYZ</span></h6>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
     
