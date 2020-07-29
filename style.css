@@ -102,6 +102,13 @@ a{
     }
 }
 
+@media only screen and (min-height:874px) {
+    .second-navi {
+        
+        top: 7%!important;
+    }
+}
+
 .search-container{
     padding: 30px;
     display: none;
